@@ -14,17 +14,20 @@ body {
 }
 
 header {
-    background-color: #000000;
+    position: fixed;
+    width: 100%;
+    background-color: #1a1919;
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 15px 15px;
     justify-content: space-between;
     display: flex;
     text-align: center;
+    opacity: 97%;
 }
 
 .header-left {
     display: flex;
-    align-items: center
+    align-items: center;
 }
 
 .logo {
@@ -44,29 +47,29 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 0 10px;
+    padding-right: 20px;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    color: #ffffff;
 }
 
 main {
-    padding: 20px;
-    background-color: #031e02;
+    padding: 0px;
+    background-color: #c9c6c6;
 }
 
 section {
     margin-bottom: 20px;
-    background-color: #b9c1b8;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     padding-left: 20px;
     padding-top: 15px;
     padding-bottom: 30px;
 }
 
 .bike {
-    border: 2px solid #ffffff;
+    border: 2px solid #000000;
     padding: 10px;
     margin: 10px 0;
     background-color: #ffffff;
@@ -81,12 +84,14 @@ section {
 }
 
 .coronet img {
-    width: 1400px;
-
+    width: 100%;
+    height: auto;
+    display: block;
+    
 }
 
 footer {
-    background-color: #000000;
+    background-color: #181818;
     display: flex;
     color: #ffffff;
     justify-content: center;
@@ -109,7 +114,7 @@ footer {
 .bike-section {
     display: flex;
     align-items: center;
-    color: #76421d;
+    color: #000000;
 }
 
 .bike-section img {
@@ -152,5 +157,24 @@ a {
     word-wrap: break-word;
 
 
+}
+
+.full-width {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+#home p {
+    font-size: 15px;
+    margin: 20px;
+
+}
+#home h1 {
+    font-size: 30px;
 
 }
