@@ -2,7 +2,7 @@ body {
     font-family: Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #313131;
 }
 .socials img {
     padding-top: 12px;
@@ -22,7 +22,7 @@ header {
     justify-content: space-between;
     display: flex;
     text-align: center;
-    opacity: 97%;
+    opacity: 96%;
 }
 
 .header-left {
@@ -90,15 +90,28 @@ section {
     
 }
 
-footer {
+.footerpart {
     background-color: #181818;
     display: flex;
     color: #ffffff;
-    justify-content: center;
     align-items: center;
-    height: 340px;
+    height: 360px;
     flex-direction: column;
+    width: 34%;
+    border: 2px; 
 }
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.ratings img {
+    max-width: 100%;
+    display: block;
+}
+
 .sponsors {
     display: flex;
     flex-direction: center;
@@ -106,9 +119,12 @@ footer {
     
 }
 .sponsors img {
-    width: 150px;
+    display: block;
+    object-fit: contain;
+    width: 60px;
     height: auto;
     margin: 0 10px;
+
 }
 
 .bike-section {
@@ -176,5 +192,31 @@ a {
 }
 #home h1 {
     font-size: 30px;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.contacts p {
+    padding-bottom: 20px;
+
+
+
+}
+
+@media (max-width: 800px) {
+    .footerpart {
+        width: 50%;
+        font-size: 10px;
+        
+    }
+
+}
+
+@media (max-width: 800px) {
+    .footerpart img {
+        scale: 60%;
+    }
 
 }
