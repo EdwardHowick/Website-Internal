@@ -1,22 +1,21 @@
 body {
-    font-family: Verdana, sans-serif;
-    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #161616;
     padding: 0;
-    background-color: #313131;
+    margin: 0;
 }
-.socials img {
-    padding-top: 12px;
+.socials-container img {
+    padding-top: 30px;
     padding-bottom: 30px;
     width: 30px;
-    height: 30px;
-    margin: 0 10px;
     object-fit: contain;
+    padding: 8px;
 }
 
 header {
     position: fixed;
     width: 100%;
-    background-color: #1a1919;
+    background-color: #131313;
     color: #ffffff;
     padding: 15px 15px;
     justify-content: space-between;
@@ -32,11 +31,13 @@ header {
 
 .logo {
     width: 50px;
-    margin-right: 10px
+    margin-right: 3px
 }
 
-header h1 {
+h1 {
     margin: 0;
+    animation: fade-up 2s;
+
 }
 
 nav ul {
@@ -48,24 +49,21 @@ nav ul li {
     display: inline;
     margin: 0 10px;
     padding-right: 20px;
-}
-
-nav ul li a {
+    animation: fade 3s;
     color: #ffffff;
 }
 
+
 main {
+    background-color: #ffffff;
     padding: 0px;
-    background-color: #c9c6c6;
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     background-color: #ffffff;
     color: #000000;
-    padding-left: 20px;
-    padding-top: 15px;
-    padding-bottom: 30px;
+    padding: 20px;
 }
 
 .bike {
@@ -90,52 +88,70 @@ section {
     
 }
 
-.footerpart {
-    background-color: #181818;
+.footer-container {
     display: flex;
-    color: #ffffff;
+    justify-content: space-around;
     align-items: center;
-    height: 360px;
-    flex-direction: column;
-    width: 34%;
-    border: 2px; 
+    max-width: 1500px;
+    margin: auto;
+    padding: 0 20px;
+    animation: fade 3s;
+    padding-top: 80px;
 }
-footer {
+
+.footer-section {
+    width: 800px;
+    height: 400px;
+    margin: 0 2px;
+    color: white;
+    border: 2px;
+    text-align: center;
+    font-size: 80%;
+}
+
+.sponsors-container {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-
-.ratings img {
-    max-width: 100%;
-    display: block;
-}
-
-.sponsors {
-    display: flex;
-    flex-direction: center;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
+    padding-bottom: 50px;
     
 }
-.sponsors img {
+.sponsors-container img {
     display: block;
-    object-fit: contain;
-    width: 60px;
+    width: 30%;
+    padding: 3px;
     height: auto;
-    margin: 0 10px;
-
 }
+
+@media (max-width: 800px) {
+    .footer-section {
+        width: 50%;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer-section img {
+        scale: 80%;
+    }
+    .ratings img {
+        width: 100%;
+    }
+}
+
+.ratings img {
+    display: block;
+    width: 100%;
+    padding: 3px;
+    height: auto;
+}
+
 
 .bike-section {
     display: flex;
     align-items: center;
     color: #000000;
-}
-
-.bike-section img {
-    max-width: 200px;
-    margin-right: 20px;
 }
 
 .bike-description p {
@@ -148,6 +164,13 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+#text-container {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 15px;
+}
+
 .bike-box {
     display: inline-block;
     text-align: center;
@@ -171,8 +194,6 @@ a {
     font-size: small;
     margin: 3px;
     word-wrap: break-word;
-
-
 }
 
 .full-width {
@@ -181,18 +202,16 @@ a {
     display: block;
     margin: 0;
     padding: 0;
-
-
 }
 
 #home p {
     font-size: 15px;
     margin: 20px;
-
+    animation: fade 3s;
 }
+
 #home h1 {
     font-size: 30px;
-
 }
 
 a:hover {
@@ -200,23 +219,95 @@ a:hover {
 }
 .contacts p {
     padding-bottom: 20px;
-
-
-
 }
 
-@media (max-width: 800px) {
-    .footerpart {
-        width: 50%;
-        font-size: 10px;
-        
-    }
 
+@keyframes fade {
+     0% {
+        opacity: 0;
+        transform: translateY(5px) scale(0.99);
+     }
+     100% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+     }
 }
 
-@media (max-width: 800px) {
-    .footerpart img {
-        scale: 60%;
+@keyframes fade-up {
+    0% {
+       opacity: 0;
+       transform: translateX(15px) scale(0.90);
     }
+    100% {
+       opacity: 1;
+       transform: translateY(0px) scale(1);
+    }
+}
+#team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px
+}
+.member {
+    align-items: center;
+    border: 5px;
+    height: 300px;
+    padding: 5px;
+    text-align: center;
+    
+}
 
+#team img {
+    width: 120px;
+    border: 30px solid #ffffff;
+    padding: 0px;
+}
+main h1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#bikes-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0px;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-text {
+    width: 70%;
+    text-align: center;
+}
+
+#store-location {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
