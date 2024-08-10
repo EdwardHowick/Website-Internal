@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Bike Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,15 +26,41 @@
     </header>
     <main>
         <img src="images/trees.jpg" alt="Biking Image" class="full-width">
-        <section id="contact">
-            <h2>Contact Information:</h2>
-            <p>Email: bestestbikestore@gmail.com</p>
-            <p>Phone: 123 456 7890</p>
+        <section id="information-container">
+            <div class="contactinfo-section">
+                <h2>Contact Information:</h2>
+                <p>Email: bestestbikestore@gmail.com</p>
+                <p>Phone: 123 456 7890</p>
+            </div>
+            <div class="openhours-section">
+                <h2>Open Days:</h2>
+                <p>Monday to Friday 8am - 4pm</p>
+                <p>Saturday 10am - 4pm</p>
+                <p>Sunday Closed</p>
+
+            </div>
+            <div class="address-section">
+                <h2>Address:</h2>
+                <p>47/49 Red Oaks Drive, Frankton</p>
+                <p>Queenstown</p>
+                <p>New Zealand</p>
+                <p>9300</p>
+            </div>
         </section>
         <section id="form-section">
+            <h1>Message Us</h1>
             <div class="form-container">
-                <h1>Message Us</h1>
                 <form action="https://formsubmit.co/73cdb4b2aed272b42825dbd8df0cb185" method="POST">
+                    <select name="Inquiry">
+                        <option></option>
+                        <option>Advice</option>
+                        <option>Question</option>
+                        <option>Repair</option>
+                        <option>Complaint</option>
+                        <option>Purchase</option>
+                        <option>Upgrade</option>
+                        <option>Other</option>
+                    </select>
                     <input type="text" name="Name" placeholder="Full Name" required>
                     <input type="email" name="Email" placeholder="Email" required>
                     <input type="tel" name="Phone Number" placeholder="Phone Number" required>
