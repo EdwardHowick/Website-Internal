@@ -176,31 +176,33 @@ a {
     padding-bottom: 15px;
 }
 
-#MBIKESDISP h1 {
-    padding-top: 120px;
-    padding-bottom: 30px;
-}
-#MBIKESDISP {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    scale: 10%;
+#titlestore-container {
+    padding-top: 160px;
 }
 
+
+.bikes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 10px;
+    padding-bottom: 120px;
+}
+
+
 .bike-box {
-    display: inline-block;
+    display: block;
     text-align: center;
     background-color: #ffffff;
-    border: 2px solid #000000;
     height: 350px;
     width: 200px;
-    vertical-align: top;
-    margin: 3px;
     color:#000000;
+    border: 2px solid rgb(0, 0, 0);
 }
 
 .bike-box img {
-
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -237,8 +239,12 @@ header h1 {
 
 a:hover {
     text-decoration: underline;
-    color: #ffffff;
+    color: #e61717;
 }
+
+
+
+
 .contacts p {
     padding-bottom: 20px;
 }
@@ -308,15 +314,16 @@ main h1 {
     align-items: center;
 }
 
-#bikes-container {
+#store-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 40px;
+    padding-bottom: 150px;
 }
 
-.bike {
+.store-item {
     display: flex;
     width: 400px;
     height: 350px;
@@ -330,7 +337,6 @@ main h1 {
     background-repeat: no-repeat;
     font-size: 30px;
     animation: fade-up 3s;
-    
     
 }
 .bike-mountain {
@@ -427,13 +433,12 @@ textarea {
 button {
     width: 90px;
     height: 40px;
-    padding: 1px;
-    cursor: pointer;
-    background: rgb(255, 52, 30);
+    background: rgb(237, 37, 15);
     color: white;
-    border: none;
+    margin: 10px;
+    border-width: 8px;
+    font-size: large;
 }
-
 
 #information-container {
     display: flex;
@@ -446,4 +451,39 @@ button {
 select {
     height: 50px;
     color: #000000;
+}
+
+.bike-box:hover {
+    border: 2px solid rgb(225, 27, 27);
+}
+
+#store-filters {
+    width: 350px;
+    padding: 0;
+    scale: 80%;
+    border: 4px;
+}
+
+
+.price-input {
+    width: auto;
+    display: flex;
+    padding: 0;
+}
+
+.price-input .field {
+    width: 40%;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+}
+.field input {
+    height: auto;
+    width: 60px;
+    margin-left: 6px;
+    font-size: large;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
 }
