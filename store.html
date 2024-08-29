@@ -61,6 +61,27 @@
                 </div>
             </a>
         </section>
+        <section id="modal_container">
+            <div class="button-container">
+                <h1>Reviews</h1>
+                <button id="close">Close</button>
+            </div>
+            <div class="modal">
+                <div class="division-padding">
+                    <ul id="reviews-list"></ul>
+                </div>
+            </div>
+            <div class="review-form">
+                <p>Add a Review!</p>
+                <form id="add-review-form">
+                    <input type="text" id="Name" placeholder="Name (20 characters maximum)" required>
+                    <textarea id="review" placeholder="Share your experience (1000 characters maximum)!" required></textarea>
+                    <label for="image">Attach Image (PNG):</label>
+                    <input type="file" id="image" accept="image/png">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footer-container">
@@ -90,10 +111,12 @@
             <div class="footer-section">
                 <h2>Review Us</h2>
                 <div class="ratings">
-                    <a href="reviews.html"><img src="images/review.png"></a>
+                    <a href="#" id="open"><img src="images/review.png"></a>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="review-modal.js"></script>
+    <script src="review-form.js"></script>
 </body>
 </html>

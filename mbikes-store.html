@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="header-logo">
-            <h1><a href="index.html"><img src="images/logo.png" alt="Bestest Bikes Logo" class="logo"></a><h1>
+            <h1><a href="index.html"><img src="images/logo.png" alt="Bestest Bikes Logo" class="logo"></a></h1>
             <h1><a href="index.html">Bestest Bikes</a></h1>
         </div>
         <nav>
@@ -29,88 +29,216 @@
         <section id="titlestore-container">
             <h1>The Bestest Store</h1>
         </section>
-        <section id="store-filters">
-            <h2>Price</h2>
-            <div class="price-input">
-                <div class="field">
-                    <span>From</span>
-                    <input type="number" class="input-min" value="0" min="0" max="30000">
-                </div>
-                <div class="field">
-                    <span>to</span>
-                    <input type="number" class="input-max" value="30000" min="0" max="30000">
+        <section id="store">
+            <div class="filter-container">
+                <h2>Price Range</h2>
+                <div class="price-input">
+                    <select id="price-range">
+                        <option value="all">All</option>
+                        <option value="500-999">$500 - $999</option>
+                        <option value="1000-1499">$1000 - $1499</option>
+                        <option value="1500-1999">$1500 - $1999</option>
+                        <option value="2000-2999">$2000 - $2999</option>
+                        <option value="3000-3999">$3000 - $3999</option>
+                        <option value="4000-infinite">$4000+</option>
+                    </select>
+                    <button id="filter-button">Filter</button>
                 </div>
             </div>
-            <button id="filter-button">Filter</button>
+            <div class="bikes-container">
+                <div id="no-results-msg" style="display: none;">No products found.</div>
+                <a href="index.html" class="bike-box" data-price="2350">
+                    <p>30% OFF</p>
+                    <img src="images/bike1.jpg">
+                    <h3>Mountain Bike Placeholder</h3>
+                    <p>$2350</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="2350">
+                    <p>30% OFF</p>
+                    <img src="images/bike1.jpg">
+                    <h3>Mountain Bike Placeholder</h3>
+                    <p>$2350</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="2350">
+                    <p>30% OFF</p>
+                    <img src="images/bike1.jpg">
+                    <h3>Mountain Bike Placeholder</h3>
+                    <p>$2350</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="2350">
+                    <p>30% OFF</p>
+                    <img src="images/bike1.jpg">
+                    <h3>Mountain Bike Placeholder</h3>
+                    <p>$2350</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="3000">
+                    <p>20% OFF</p>
+                    <img src="images/bike4.jpg">
+                    <h3>Mountain Bike Placeholder 2</h3>
+                    <p>$3000</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="3000">
+                    <p>20% OFF</p>
+                    <img src="images/bike4.jpg">
+                    <h3>Mountain Bike Placeholder 2</h3>
+                    <p>$3000</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="3000">
+                    <p>20% OFF</p>
+                    <img src="images/bike4.jpg">
+                    <h3>Mountain Bike Placeholder 2</h3>
+                    <p>$3000</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="3000">
+                    <p>20% OFF</p>
+                    <img src="images/bike4.jpg">
+                    <h3>Mountain Bike Placeholder 2</h3>
+                    <p>$3000</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="10000">
+                    <p>PRO</p>
+                    <img src="images/santacruzv10.png">
+                    <h3>Mountain Bike Placeholder 3</h3>
+                    <p>$10000</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="10000">
+                    <p>PRO</p>
+                    <img src="images/santacruzv10.png">
+                    <h3>Mountain Bike Placeholder 3</h3>
+                    <p>$10000</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="10000">
+                    <p>PRO</p>
+                    <img src="images/santacruzv10.png">
+                    <h3>Mountain Bike Placeholder 3</h3>
+                    <p>$10000</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="10000">
+                    <p>PRO</p>
+                    <img src="images/santacruzv10.png">
+                    <h3>Mountain Bike Placeholder 3</h3>
+                    <p>$10000</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="799">
+                    <p>CHEAP!!!</p>
+                    <img src="images/trekmarlin.jpg">
+                    <h3>Mountain Bike Placeholder 4</h3>
+                    <p>$799</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="799">
+                    <p>CHEAP!!!</p>
+                    <img src="images/trekmarlin.jpg">
+                    <h3>Mountain Bike Placeholder 4</h3>
+                    <p>$799</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="799">
+                    <p>CHEAP!!!</p>
+                    <img src="images/trekmarlin.jpg">
+                    <h3>Mountain Bike Placeholder 4</h3>
+                    <p>$799</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="799">
+                    <p>CHEAP!!!</p>
+                    <img src="images/trekmarlin.jpg">
+                    <h3>Mountain Bike Placeholder 4</h3>
+                    <p>$799</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="799">
+                    <p>CHEAP!!!</p>
+                    <img src="images/trekmarlin.jpg">
+                    <h3>Mountain Bike Placeholder 4</h3>
+                    <p>$799</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="799">
+                    <p>CHEAP!!!</p>
+                    <img src="images/trekmarlin.jpg">
+                    <h3>Mountain Bike Placeholder 4</h3>
+                    <p>$799</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="1700">
+                    <p>Sweet Hardtail!</p>
+                    <img src="images/trekroscoe.jpg">
+                    <h3>Mountain Bike Placeholder 5</h3>
+                    <p>$1700</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="1700">
+                    <p>Sweet Hardtail!</p>
+                    <img src="images/trekroscoe.jpg">
+                    <h3>Mountain Bike Placeholder 5</h3>
+                    <p>$1700</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="1700">
+                    <p>Sweet Hardtail!</p>
+                    <img src="images/trekroscoe.jpg">
+                    <h3>Mountain Bike Placeholder 5</h3>
+                    <p>$1700</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="1700">
+                    <p>Sweet Hardtail!</p>
+                    <img src="images/trekroscoe.jpg">
+                    <h3>Mountain Bike Placeholder 5</h3>
+                    <p>$1700</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="1700">
+                    <p>Sweet Hardtail!</p>
+                    <img src="images/trekroscoe.jpg">
+                    <h3>Mountain Bike Placeholder 5</h3>
+                    <p>$1700</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="1100">
+                    <p>Beginner Friendly!</p>
+                    <img src="images/polygonxtrada.jpg">
+                    <h3>Mountain Bike Placeholder 6</h3>
+                    <p>$1100</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="1100">
+                    <p>Beginner Friendly!</p>
+                    <img src="images/polygonxtrada.jpg">
+                    <h3>Mountain Bike Placeholder 6</h3>
+                    <p>$1100</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="1100">
+                    <p>Beginner Friendly!</p>
+                    <img src="images/polygonxtrada.jpg">
+                    <h3>Mountain Bike Placeholder 6</h3>
+                    <p>$1100</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="1100">
+                    <p>Beginner Friendly!</p>
+                    <img src="images/polygonxtrada.jpg">
+                    <h3>Mountain Bike Placeholder 6</h3>
+                    <p>$1100</p>
+                </a>
+                <a href="index.html" class="bike-box" data-price="1100">
+                    <p>Beginner Friendly!</p>
+                    <img src="images/polygonxtrada.jpg">
+                    <h3>Mountain Bike Placeholder 6</h3>
+                    <p>$1100</p>
+                </a>
+
+            </div>
         </section>
-        <div class="bikes-container">
-            <a href="index.html" class="bike-box" data-price="4000">
-                <p>30% OFF</p>
-                <img src="images/bike1.jpg" alt="Bike 1">
-                <h3>Bike HEHEHEHA</h3>
-                <p>$4000</p>
-            </a>
-            <a href="index.html" class="bike-box" data-price="4000">
-                <p>30% OFF</p>
-                <img src="images/bike1.jpg" alt="Bike 1">
-                <h3>Bike HEHEHEHA</h3>
-                <p>$4000</p>
-            </a>
-            <a href="index.html" class="bike-box" data-price="4000">
-                <p>30% OFF</p>
-                <img src="images/bike1.jpg" alt="Bike 1">
-                <h3>Bike HEHEHEHA</h3>
-                <p>$4000</p>
-            </a>
-            <a href="index.html" class="bike-box" data-price="4000">
-                <p>30% OFF</p>
-                <img src="images/bike1.jpg" alt="Bike 1">
-                <h3>Bike HEHEHEHA</h3>
-                <p>$4000</p>
-            </a>
-            <a href="index.html" class="bike-box" data-price="4000">
-                <p>30% OFF</p>
-                <img src="images/bike1.jpg" alt="Bike 1">
-                <h3>Bike HEHEHEHA</h3>
-                <p>$4000</p>
-            </a>
-            <a href="index.html" class="bike-box" data-price="4000">
-                <p>30% OFF</p>
-                <img src="images/bike1.jpg" alt="Bike 1">
-                <h3>Bike HEHEHEHA</h3>
-                <p>$4000</p>
-            </a>
-            <a href="index.html" class="bike-box" data-price="4000">
-                <p>30% OFF</p>
-                <img src="images/bike1.jpg" alt="Bike 1">
-                <h3>Bike HEHEHEHA</h3>
-                <p>$4000</p>
-            </a>
-            <a href="index.html" class="bike-box" data-price="2000">
-                <p>30% OFF</p>
-                <img src="images/helmet.png" alt="Bike 1">
-                <h3>Bike HEHEHEHA</h3>
-                <p>$2000</p>
-            </a>
-            <a href="index.html" class="bike-box" data-price="2000">
-                <p>30% OFF</p>
-                <img src="images/helmet.png" alt="Bike 1">
-                <h3>Bike HEHEHEHA</h3>
-                <p>$2000</p>
-            </a>
-            <a href="index.html" class="bike-box" data-price="2000">
-                <p>30% OFF</p>
-                <img src="images/helmet.png" alt="Bike 1">
-                <h3>Bike HEHEHEHA</h3>
-                <p>$2000</p>
-            </a>
-            <a href="index.html" class="bike-box" data-price="2000">
-                <p>30% OFF</p>
-                <img src="images/helmet.png" alt="Bike 1">
-                <h3>Bike HEHEHEHA</h3>
-                <p>$2000</p>
-            </a>
-        </div>
+        <section id="modal_container">
+            <div class="button-container">
+                <h1>Reviews</h1>
+                <button id="close">Close</button>
+            </div>
+            <div class="modal">
+                <div class="division-padding">
+                    <ul id="reviews-list"></ul>
+                </div>
+            </div>
+            <div class="review-form">
+                <p>Add a Review!</p>
+                <form id="add-review-form">
+                    <input type="text" id="Name" placeholder="Name (20 characters maximum)" required>
+                    <textarea id="review" placeholder="Share your experience (1000 characters maximum)!" required></textarea>
+                    <label for="image">Attach Image (PNG):</label>
+                    <input type="file" id="image" accept="image/png">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footer-container">
@@ -140,11 +268,13 @@
             <div class="footer-section">
                 <h2>Review Us</h2>
                 <div class="ratings">
-                    <a href="reviews.html"><img src="images/review.png"></a>
+                    <a href="#" id="open"><img src="images/review.png"></a>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="filter.js"></script>
+    <script src="review-modal.js"></script>
+    <script src="review-form.js"></script>
 </body>
 </html>

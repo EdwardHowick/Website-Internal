@@ -26,19 +26,41 @@
     </header>
     <main>
         <img src="images/coronet.jpg" alt="Biking Image" class="full-width">
+        <section id="text-container">
+            <h1>Welcome to Bestest Bikes!</h1>
+            <p>At Bestest Bikes, we believe that cycling is more than just a mode of transportation—it's a lifestyle, a passion, and a journey. Located in the heart of Queenstown, our store is dedicated to providing top-quality bicycles and exceptional service to riders of all levels.<br></p>
+            <p>Why Choose Bestest Bikes? Premium Quality: We offer a handpicked selection of high-performance bicycles from leading brands. Whether you're looking for a rugged mountain bike, a sleek road bike, or a versatile hybrid, you'll find the perfect ride in our extensive inventory.<br></p>
+            <p>Expert Services: Our team of professional mechanics and bike enthusiasts is here to keep your bike in peak condition. From custom fittings to routine maintenance and complex repairs, we ensure your bike is always ready for the road.<br></p>
+            <p>Wide Selection: At Bestest Bikes, we pride ourselves on our diverse range of bikes and accessories. From kids' bikes to advanced cycling gear, we cater to all ages and skill levels, ensuring everyone can enjoy the thrill of cycling.<br></p>
+            <p>Customer Experience: Our friendly and knowledgeable staff is committed to making your visit enjoyable and informative. We provide a personalized shopping experience to help you find exactly what you need, and our convenient location and hours make it easy to stop by.<br></p>
+            <p>Value: We believe in offering competitive prices without compromising on quality. With great deals, discounts, and financing options, we ensure that your investment in cycling is affordable and worthwhile.<br></p>
+            <p>Community and Events: Bestest Bikes is more than just a store; it's a community hub. We host regular rides, workshops, and events to bring local cyclists together, fostering a supportive and enthusiastic cycling community.<br></p>
+            <p>Innovation and Technology: Stay ahead of the curve with our selection of the latest bike models and cutting-edge accessories. Our team stays up-to-date with cycling trends and technology to bring you the best in modern cycling.<br></p>
+            <p>Join the Bestest Bikes family and experience the difference. Whether you're a seasoned cyclist or just starting out, we're here to support you every pedal of the way. Visit us today and discover why we're the bestest bike store in Queenstown!<br></p>
+            <p>At Bestest Bikes, we go above and beyond to ensure that your cycling experience is nothing short of extraordinary. We understand that every rider has unique needs and preferences, which is why we offer tailored advice and solutions to help you make informed decisions. Whether you’re choosing your first bike or upgrading to the latest model, our knowledgeable staff is here to guide you every step of the way.<br></p> <p>Finding the right bike isn’t just about style or brand; it’s about fit and comfort. Our expert team provides personalized bike fittings to ensure you get a ride that suits your body and riding style perfectly. We take the time to measure and adjust, so you can enjoy a smoother, more efficient ride.<br></p> <p>We are committed to promoting eco-friendly practices within the cycling community. Our store offers a range of sustainable products and we advocate for responsible cycling habits. By supporting local environmental initiatives and offering bikes designed to reduce your carbon footprint, we strive to make a positive impact on both the environment and our community.<br></p> <p>Joining Bestest Bikes means becoming part of a vibrant cycling community. We regularly organize group rides, skill-building workshops, and social events that bring together riders of all levels. Whether you’re looking to improve your skills, meet fellow enthusiasts, or simply enjoy a fun day out, our events offer something for everyone.<br></p> <p>To keep you informed about the latest products, promotions, and events, we encourage you to stay connected with us. Follow us on social media, subscribe to our newsletter, and check our website regularly for updates. We’re always excited to share news and connect with our community.<br></p> <p>Experience the difference at Bestest Bikes. Whether you’re a seasoned cyclist or just starting out, we’re here to support you every pedal of the way. Visit us today and discover why we’re the bestest bike store in Queenstown!</p>
+        </section>
+        <section id="modal_container">
+            <div class="button-container">
+                <h1>Reviews</h1>
+                <button id="close">Close</button>
+            </div>
+            <div class="modal">
+                <div class="division-padding">
+                    <ul id="reviews-list"></ul>
+                </div>
+            </div>
+            <div class="review-form">
+                <p>Add a Review!</p>
+                <form id="add-review-form">
+                    <input type="text" id="Name" placeholder="Name (20 characters maximum)" required>
+                    <textarea id="review" placeholder="Share your experience (1000 characters maximum)!" required></textarea>
+                    <label for="image">Attach Image (PNG):</label>
+                    <input type="file" id="image" accept="image/png">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
     </main>
-    <section id="text-container">
-        <h1>Welcome to Bestest Bikes!</h1>
-        <p>At Bestest Bikes, we believe that cycling is more than just a mode of transportation—it's a lifestyle, a passion, and a journey. Located in the heart of Queenstown, our store is dedicated to providing top-quality bicycles and exceptional service to riders of all levels.<br></p>
-        <p>Why Choose Bestest Bikes? Premium Quality: We offer a handpicked selection of high-performance bicycles from leading brands. Whether you're looking for a rugged mountain bike, a sleek road bike, or a versatile hybrid, you'll find the perfect ride in our extensive inventory.<br></p>
-        <p>Expert Services: Our team of professional mechanics and bike enthusiasts is here to keep your bike in peak condition. From custom fittings to routine maintenance and complex repairs, we ensure your bike is always ready for the road.<br></p>
-        <p>Wide Selection: At Bestest Bikes, we pride ourselves on our diverse range of bikes and accessories. From kids' bikes to advanced cycling gear, we cater to all ages and skill levels, ensuring everyone can enjoy the thrill of cycling.<br></p>
-        <p>Customer Experience: Our friendly and knowledgeable staff is committed to making your visit enjoyable and informative. We provide a personalized shopping experience to help you find exactly what you need, and our convenient location and hours make it easy to stop by.<br></p>
-        <p>Value: We believe in offering competitive prices without compromising on quality. With great deals, discounts, and financing options, we ensure that your investment in cycling is affordable and worthwhile.<br></p>
-        <p>Community and Events: Bestest Bikes is more than just a store; it's a community hub. We host regular rides, workshops, and events to bring local cyclists together, fostering a supportive and enthusiastic cycling community.<br></p>
-        <p>Innovation and Technology: Stay ahead of the curve with our selection of the latest bike models and cutting-edge accessories. Our team stays up-to-date with cycling trends and technology to bring you the best in modern cycling.<br></p>
-        <p>Join the Bestest Bikes family and experience the difference. Whether you're a seasoned cyclist or just starting out, we're here to support you every pedal of the way. Visit us today and discover why we're the bestest bike store in Queenstown!<br></p>
-    </section>
     <footer>
         <div class="footer-container">
             <div class="footer-section">
@@ -67,10 +89,12 @@
             <div class="footer-section">
                 <h2>Review Us</h2>
                 <div class="ratings">
-                    <a href="reviews.html"><img src="images/review.png"></a>
+                    <a href="#" id="open"><img src="images/review.png"></a>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="review-modal.js"></script>
+    <script src="review-form.js"></script>
 </body>
 </html>
