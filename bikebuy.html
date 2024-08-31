@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Bike Store</title>
+    <title>Contact - Bike Store</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     <header>
         <div class="header-logo">
             <h1><a href="index.html"><img src="images/logo.png" alt="Bestest Bikes Logo" class="logo"></a><h1>
-            <h1><a href="index.html">Bestest Bikes </a></h1>
+            <h1><a href="index.html">Bestest Bikes</a></h1>
         </div>
         <nav>
             <ul>
@@ -25,19 +25,29 @@
         </nav>
     </header>
     <main>
-        <img src="images/coronet.jpg" alt="Biking Image" class="full-width">
-        <section id="text-container">
-            <h1>Welcome to Bestest Bikes!</h1>
-            <p>At Bestest Bikes, we believe that cycling is more than just a mode of transportation—it's a lifestyle, a passion, and a journey. Located in the heart of Queenstown, our store is dedicated to providing top-quality bicycles and exceptional service to riders of all levels.<br></p>
-            <p1>Why Choose Bestest Bikes?</p1>
-            <p>Premium Quality: We offer a handpicked selection of high-performance bicycles from leading brands. Whether you're looking for a rugged mountain bike, a sleek road bike, or a versatile hybrid, you'll find the perfect ride in our extensive inventory.<br></p>
-            <p>Expert Services: Our team of professional mechanics and bike enthusiasts is here to keep your bike in peak condition. From custom fittings to routine maintenance and complex repairs, we ensure your bike is always ready for the road.<br></p>
-            <p>Wide Selection: At Bestest Bikes, we pride ourselves on our diverse range of bikes and accessories. From kids' bikes to advanced cycling gear, we cater to all ages and skill levels, ensuring everyone can enjoy the thrill of cycling.<br></p>
-            <p>Customer Experience: Our friendly and knowledgeable staff is committed to making your visit enjoyable and informative. We provide a personalized shopping experience to help you find exactly what you need, and our convenient location and hours make it easy to stop by.<br></p>
-            <p>Value: We believe in offering competitive prices without compromising on quality. With great deals, discounts, and financing options, we ensure that your investment in cycling is affordable and worthwhile.<br></p>
-            <p>Community and Events: Bestest Bikes is more than just a store; it's a community hub. We host regular rides, workshops, and events to bring local cyclists together, fostering a supportive and enthusiastic cycling community.<br></p>
-            <p>Innovation and Technology: Stay ahead of the curve with our selection of the latest bike models and cutting-edge accessories. Our team stays up-to-date with cycling trends and technology to bring you the best in modern cycling.<br></p>
-            <p>Join the Bestest Bikes family and experience the difference. Whether you're a seasoned cyclist or just starting out, we're here to support you every pedal of the way. Visit us today and discover why we're the bestest bike store in Queenstown!<br></p>
+        <section id="backbutton">
+            <a>←</a>
+        </section>
+        <section id="purchase-information">
+            <div class="item-image">
+            </div>
+            <div class="iteminformation">
+                <h2 id="item-name">Item Name</h2>
+                <p id="item-price">Price</p>
+                <label>Quantity</label>
+                <input type="number" name="number" min="1" max="20" id="mouse-only-number-input" value="1">
+                <label id="sizelabel">Size</label>
+                <select id="sizeselect">
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+                <button id="buybutton">Buy</button>
+            </div>
+        </section>
+        <section id="description">
+            <h1>Description</h1>
+            <p id="item-description">Description</p>
         </section>
         <section id="modal_container">
             <div class="button-container">
@@ -54,7 +64,7 @@
                 <form id="add-review-form">
                     <input type="text" id="Name" placeholder="Name (20 characters maximum)" required>
                     <textarea id="review" placeholder="Share your experience (1000 characters maximum)!" required></textarea>
-                    <label for="image">Attach Image (PNG):</label>
+                    <label for="image">Attach Image:</label>
                     <input type="file" id="image" accept="image/png">
                     <button type="submit">Submit</button>
                 </form>
@@ -96,5 +106,7 @@
     </footer>
     <script src="review-modal.js"></script>
     <script src="review-form.js"></script>
+    <script src="item-details.js"></script>
+    <script src="backbutton.js"></script>
 </body>
 </html>

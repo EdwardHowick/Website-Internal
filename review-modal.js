@@ -1,3 +1,10 @@
+window.onload = () => {
+    const mouseOnlyNumberInputField = document.getElementById("mouse-only-number-input");
+    mouseOnlyNumberInputField.addEventListener("keypress", (event) => {
+      event.preventDefault();
+    });
+}
+
 const openButton = document.getElementById('open');
 const closeButton = document.getElementById('close');
 const modalContainer = document.getElementById('modal_container');
