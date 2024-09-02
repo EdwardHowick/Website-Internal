@@ -4,9 +4,12 @@ STORE PRICE FILTER
 
 
 Description: 
-This is the function for filtering the store items by price
+This is the function for filtering the store items by price.
+
+P.S if you want proper comments then go to bikefilter.js as it is essentially the same filter.
 ================================================================================
 */
+
 
 
 function filterItems() {
@@ -14,9 +17,9 @@ function filterItems() {
     const bikes = document.querySelectorAll('.bike-box');
     const noResultsMsg = document.querySelector('#no-results-msg')
     
-    let minPrice = 0; // sets minimum price
-    let maxPrice = Infinity; // sets maximum price
-    let results = false; // automatically sets results as none
+    let minPrice = 0;
+    let maxPrice = Infinity;
+    let results = false;
 
     if (range !== 'all') {
         const [min, max] = range.split('-');
@@ -33,15 +36,15 @@ function filterItems() {
         const bikePrice = parseFloat(bike.getAttribute('data-price'));
 
         if (bikePrice >= minPrice && bikePrice <= maxPrice) {
-            bike.style.display = 'block'; // adds visibility of bike
-            results = true; // results were found
+            bike.style.display = 'block';
+            results = true;
         } else {
-            bike.style.display = 'none'; // removes visibility of bike
+            bike.style.display = 'none';
         }
     });
 
     if (results) {
-        noResultsMsg.style.display = 'none'; // 
+        noResultsMsg.style.display = 'none';
     }
     else {
         noResultsMsg.style.display = 'block';

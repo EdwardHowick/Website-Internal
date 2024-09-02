@@ -1,21 +1,34 @@
+/*
+================================================================================
+ITEM DETAILS
+
+
+Description: 
+This is the function that syncs the image, name, price
+and description of the bikebuy html to match the chosen bike.
+================================================================================
+*/
+
+
 buybutton = document.getElementById('buybutton')
 
 buybutton.addEventListener('click', () => {
     alert("Buying items is unfortunately not a feature ):")
-
 })
 
 document.addEventListener("DOMContentLoaded", () => {
     const pageparams = new URLSearchParams(window.location.search);
+    // Gets item id from the page url
     const itemID = pageparams.get('itemID')
+    
+    // Turning off sizing S M L selection for pedals
     if (itemID === "10") {
         sizeselect.style.display = "none";
         sizelabel.style.display = "none";
 
     }
     const itemImages = {
-
-        //mountain bike images
+        // Mountain bike images
         "1": "images/bike1.jpg",
         "2": "images/bike4.jpg",
         "3": "images/santacruzv10.png",
@@ -23,13 +36,13 @@ document.addEventListener("DOMContentLoaded", () => {
         "5": "images/trekroscoe.jpg",
         "6": "images/polygonxtrada.jpg",
         
-        //road bike images
+        // Road bike images
         "7": "images/bike2.jpg",
 
-        //electric bike images
+        // Electric bike images
         "8": "images/bike3.jpg",
 
-        //helmet images
+        // Helmet images
         "9": "images/helmet.png",
 
         "10": "images/pedal.png",
@@ -37,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "11": "images/merch.png",
     }
     const itemNames = {
-        //mountain bike names
+        // Mountain bike names
         "1": "Giant Trance Advanced 29 2 ",
         "2": "Specialized Status 160",
         "3": "Santa Cruz v10",
@@ -45,23 +58,23 @@ document.addEventListener("DOMContentLoaded", () => {
         "5": "Trek Roscoe",
         "6": "Polygon Xtrada",
 
-        //road bike names
+        // Road bike names
         "7": "Giant TCR Advanced Disc 2 Pro Compact",
 
-        //electric bike names
+        // Electric bike names
         "8": "Giant Trance X Advanced E+ Elite 0 Electric",
 
-        //helmet names
+        // Helmet names
         "9": "Bone Helmet",
 
-        //pedal names
+        // Pedal names
         "10": "Pinner Elite Flat Pedals",
 
-        //merch names
+        // Merch names
         "11": "Bestest Merch",
     }
     const itemPrice = {
-        //mountain bike prices
+        // Mountain bike prices
         "1": "$2350",
         "2": "$3000",
         "3": "$10000",
@@ -69,19 +82,19 @@ document.addEventListener("DOMContentLoaded", () => {
         "5": "$1700",
         "6": "$1100",
 
-        //road bike prices
+        // Road bike prices
         "7": "$2800",
 
-        //electric bike prices
+        // Electric bike prices
         "8": "$19000",
 
-        //helmet prices
+        // Helmet prices
         "9": "$200",
 
-        //pedal prices
+        // Pedal prices
         "10": "$200",
 
-        //merch prices
+        // Merch prices
         "11": "$120",
 
     }
@@ -99,12 +112,13 @@ document.addEventListener("DOMContentLoaded", () => {
         "11": "Discover the epitome of quality and creativity with our Bestest Merch collection—a meticulously curated range of exclusive items designed for true enthusiasts. Whether you're a dedicated fan, a collector, or simply someone who appreciates unique and high-quality merchandise, our Bestest Merch has something special for everyone.",
     }
 
-
     const imageUrl = itemImages[itemID];
-
     const itemImage = document.querySelector('.item-image'); 
+    
+    // Sets image of the item corresponding to the url id
     itemImage.style.backgroundImage = `url(${imageUrl})`;
-
+    
+    // Sets the name price and description of the item to match the id
     document.getElementById('item-name').textContent = itemNames[itemID]
     document.getElementById('item-price').textContent = itemPrice[itemID]
     document.getElementById('item-description').textContent = itemDescription[itemID]
